@@ -1,55 +1,7 @@
-# ── Secrets & Credentials ──────────────────────────────────
-config/.env
-*.env
-!.env.example
-
-# ── Python ─────────────────────────────────────────────────
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+.pytest_cache/
 .venv/
-venv/
-*.egg-info/
-
-# ── dbt (only commit source, not deployed artifacts) ──────
-dbt_fraud_dwh/target/
-dbt_fraud_dwh/dbt_packages/
-dbt_fraud_dwh/logs/
-dbt_fraud_dwh/.user.yml
-
-# ── ML models (binary, too large for git) ─────────────────
-ml/models/*.joblib
-ml/models/*.pkl
-streaming/models/
-*.pkl
-
-# ── Data & Runtime ─────────────────────────────────────────
-data/
-spark-warehouse/
-metastore_db/
-derby.log
-
-# ── Airflow ────────────────────────────────────────────────
-airflow/logs/
-airflow/plugins/__pycache__/
-pipelines/dags/__pycache__/
-
-# ── Docker / JARs ─────────────────────────────────────────
-scripts/jars/
-
-# ── OS ─────────────────────────────────────────────────────
+*.py[cod]
 .DS_Store
-Thumbs.db
-desktop.ini
+fraud_feedback.db
 
-# ── Temp/debug scripts (created during debugging) ────────
-check_ps.py
-check_compose.py
-copy_from_docker.py
-get_mounts.py
-run_docker_debug.py
-_restructure.py
-ps_output.txt
-compose_ps.txt
-ps.txt

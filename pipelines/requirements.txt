@@ -1,8 +1,0 @@
-apache-airflow==2.8.1
-astronomer-cosmos==1.3.0
-dbt-snowflake==1.7.0
-snowflake-connector-python==3.6.0
-pyodbc==5.1.0
-boto3==1.34.0
-pandas==2.1.4
-pyarrow==14.0.2
